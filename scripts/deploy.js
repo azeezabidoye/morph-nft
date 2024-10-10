@@ -1,11 +1,11 @@
 const { ethers } = require("hardhat");
 
-// async function main() {
-//   const [deployer] = await ethers.getSigners();
-//   console.log("Deploying contracts with the account:", deployer.address);
+async function main() {
+  const [deployer] = await ethers.getSigners();
+  console.log("Deploying contracts with the account:", deployer.address);
 
-//   // Get the contract factory
-//   const NFTContract = await ethers.getContractFactory("MorphNFT");
+  // Get the contract factory
+  const NFTContract = await ethers.getContractFactory("MorphNFT");
 
 //   // Deploy the contract
 //   const nft = await NFTContract.deploy();
