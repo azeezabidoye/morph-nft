@@ -14,7 +14,7 @@ async function main() {
   console.log("NFT Contract deployed to:", nft.target); // Use .target to get the deployed address in Ethers.js v6
 }
 
-// main().catch((error) => {
-//   console.error(error);
-//   process.exitCode = 1;
-// });
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
